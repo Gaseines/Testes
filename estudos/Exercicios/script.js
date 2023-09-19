@@ -13,3 +13,11 @@ for(i = 0; i <= 19; i++){
 
 
 
+let velocidade = 0
+
+if(velocidade > 100){
+    console.log(`Multado, sua velocidade foi de ${velocidade} e maxima permitida é de 100km`)
+}
+
+
+

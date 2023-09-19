@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#jogo-container{
+    position: relative;
+    
+    width: 100%;
+    height: 500px;
+    border-bottom: 20px solid rgb(52, 76, 92);
+    margin: auto;
+    overflow: hidden;
+    background: linear-gradient(to bottom, rgb(109, 109, 156) 30%, white 65%);
+}
+
+.flor{
+    position: absolute;
+    width: 130px;
+    bottom: 0;
+    
+    animation: flor-anim 1.5s infinite linear;
+}
+
+.boneco{
+    position: absolute;
+    width: 200px;
+    bottom: -5.5%;
+    
+}
+
+.jump{
+    animation: jump 600ms ease-out;
+}
+
+.nuvi{
+    position: absolute;
+    width: 550px;
+    top: 50px;
+    animation: nuvi-mov 3s infinite linear;
+}
+
+@keyframes flor-anim {
+    0%{
+        right: -130px;
+    }
+    100%{
+        right: 100%;
+    }
+}
+
+@keyframes jump{
+    0%{
+        bottom: -5.5%;
+    }
+
+
+    50%{
+        bottom: 30%;
+    }
+
+
+    100%{
+        bottom: -5.5%;
+    }
+}
+
+@keyframes nuvi-mov{
+    0%{
+        right: -550px;
+        
+    }
+
+
+
+    100%{
+        right: 100%;
+        
+    }
+
+
+}
+
